@@ -36,7 +36,9 @@
   ],
   "devDependencies": {
     "gulp-workspace": "0.0.x",
-    "lesshat": "^3.0.2"
+    "lesshat": "^3.0.2",
+    "webdriverio": "^2.3.0",
+    "chromedriver": "^2.12.0"
   },
   "dependencies": {
     "fluxo": "0.0.x",

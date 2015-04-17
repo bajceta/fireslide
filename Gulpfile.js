@@ -59,7 +59,7 @@ gulp.task('start', ['build'], function(done) {
     );
 });
 
-gulp.task('dev', ['build'], function(done) {
+gulp.task('dev', ['build','wks-server-show'], function(done) {
     sequence(
         'watch',
         done

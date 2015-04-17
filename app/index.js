@@ -15,15 +15,19 @@ React.initializeTouchEvents(true);
 // router actions communicate to the app store
 router.init({
     '/': function() {
-        router.navigate('show');
+        console.log('show 1');
+        router.navigate('remote');
     },
     '/show': function() {
+        console.log('show 2');
         store.trigger('change-mode', 'show');
     },
     '/attend': function() {
+        console.log('attend');
         store.trigger('change-mode', 'attendee');
     },
     '/remote': function() {
+        console.log('remote');
         store.trigger('change-mode', 'remote');
     }
 });

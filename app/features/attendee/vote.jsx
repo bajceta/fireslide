@@ -26,7 +26,7 @@ module.exports = React.createClass({
     render() {
         var className = 'vote-' + this.props.value;
         return (
-            <TouchClick className={className} onAction={this._vote}>{this.props.value}</TouchClick>
+            <TouchClick data-ta={className} className={className} onAction={this._vote}>{this.props.value}</TouchClick>
         );
     }
 
